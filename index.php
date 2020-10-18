@@ -26,7 +26,7 @@
 					<th>NOME</th>
 					<th>E-MAIL</th>
 					<th>CPF</th>
-					<th>DT. DE NASCIMENTO</th>
+					<th>DATA DE NASC.</th>
 					<th>ENDEREÇO</th>
 					<th>TELEFONE</th>
 					<th colspan="3">AÇÕES</th>
