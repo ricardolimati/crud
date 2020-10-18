@@ -1,10 +1,10 @@
 <?php include_once './dependencias.php' ?>
 
 <h2 class="text-center">
-  CADASTRO DO CLIENTE <i class="fa fa-user-plus"></i>
+  ALTERAÇÃO DO CLIENTE <i class="fa fa-user-edit"></i>
 </h2>
 <hr>
-<form method="POST" action="../controller/insert_client.php">
+<form method="POST" action="../controller/update_client.php">
   <div class="container">
     <div class="form-row">
       <div class="col-md-6">
@@ -37,8 +37,8 @@
         <input class="form-control" type="text" name="address" required></br>
       </div>
       <div class="col-md-4">
-        <button class="btn- btn-primary btn-lg">
-          Inserir Client <i class="fa fa-user-plus"></i>
+        <button class="btn- btn-warning btn-lg">
+          ALTERAR CLIENTE <i class="fa fa-user-edit"></i>
         </button>
         <br><br>
         <a href="../index.php">
