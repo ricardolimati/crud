@@ -17,7 +17,7 @@ $maneger = new Manager();
 
 	<div class="container">
 
-		<h2 class="text-center"> List of Clients <i class="fa fa-users"></i></h2>
+		<h2 class="text-center"> LISTA DE CLIENTES <i class="fa fa-users"></i></h2>
 
 		<h5 class="text-right">
 			<a href="view/page_register.php" class="btn btn-primary btn-xs">
