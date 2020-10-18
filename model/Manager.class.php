@@ -1,5 +1,5 @@
 <?php
-class Maneger extends Conexao
+class Manager extends Conexao
 {
   public function insertClient($table, $data)
   {
@@ -20,5 +20,14 @@ class Maneger extends Conexao
     $statement = $pdo->query($sql);
     $statement->execute();
     return $statement->fetchAll();
+  }
+
+  public function deleteClient($table, $id){
+    $pdo = parent::get_instance();
+    $sql = "DELETE FROM $table WHERE id = :id";
+    $statement = $pdo->prepare($sql);
+    $statement->bindValue(":id", $id);
+    $statement->execute();
+
   }
 }
