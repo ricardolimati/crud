@@ -1,7 +1,8 @@
 <?php 
-  include_once './dependencias.php';
+  include_once './header.php';
   include_once '../model/Conexao.class.php';
   include_once '../model/Manager.class.php';
+
 
   $manager = new Manager();
 
@@ -69,3 +70,4 @@
     $("#phone").mask("(00) 00000-0000");
   });
 </script>
+<?php include_once './footer.php' ?>

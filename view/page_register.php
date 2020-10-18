@@ -1,4 +1,4 @@
-<?php include_once './dependencias.php' ?>
+<?php include_once './header.php' ?>
 
 <h2 class="text-center">
   CADASTRO DO CLIENTE <i class="fa fa-user-plus"></i>
@@ -56,3 +56,4 @@
     $("#phone").mask("(00) 00000-0000");
   });
 </script>
+<?php include_once './footer.php' ?>
