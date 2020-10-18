@@ -1,4 +1,12 @@
 <?php
+/**
+ * Esta classe de conexão com o Mysql
+ * 
+ * @autor Ricardo Rodrigues de Lima <ricardodreamsites@gmail.com>
+ * @versao 1.0
+ * @copyright © 2020
+ * 
+ */
 class Conexao{
   public static $instance;
   public static function get_instance(){

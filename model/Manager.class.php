@@ -1,4 +1,12 @@
 <?php
+/**
+ * Esta classe de Gerenciamento MVC
+ * 
+ * @autor Ricardo Rodrigues de Lima <ricardodreamsites@gmail.com>
+ * @versao 1.0
+ * @copyright © 2020
+ * 
+ */
 class Manager extends Conexao
 {
   public function insertClient($table, $data)
