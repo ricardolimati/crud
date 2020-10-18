@@ -33,13 +33,13 @@ $maneger = new Manager();
 				<thead class="thead">
 					<tr>
 						<th>ID</th>
-						<th>NOME</th>
-						<th>E-MAIL</th>
+						<th>Cliente</th>
+						<th>E-mail</th>
 						<th>CPF</th>
-						<th>DATA DE NASC.</th>
-						<th>ENDEREÇO</th>
-						<th>TELEFONE</th>
-						<th colspan="3">AÇÕES</th>
+						<th>Dt.Nascimento</th>
+						<th>Endereço</th>
+						<th>Whatsapp</th>
+						<th colspan="3">Ações</th>
 					</tr>
 				</thead>
 				<tbody>
