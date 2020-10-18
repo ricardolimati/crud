@@ -13,4 +13,12 @@ class Maneger extends Conexao
     }
     $statement->execute();
   }
+
+  public function listClient($table){
+    $pdo = parent::get_instance();
+    $sql = "SELECT * FROM $table ORDER BY name ASC";
+    $statement = $pdo->query($sql);
+    $statement->execute();
+    return $statement->fetchAll();
+  }
 }
