@@ -8,7 +8,7 @@ $id = $_POST['id'];
 
 if(isset($id) && !empty($id)){
   $manager->deleteClient('registros', $id);
-  header("Location: ../index.php?CLIENTE DELETADO!");
+  header("Location: ../view/page_listclient.php?CLIENTE DELETADO!");
 }
 
 ?>

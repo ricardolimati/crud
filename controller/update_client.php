@@ -10,7 +10,7 @@ $id = $_POST["id"];
 
 if(isset($id) && !empty($id)){
   $manager->updateClient('registros', $update_client, $id);
-  header("Location: ../index.php?CLIENTE ALTERADO!");
+  header("Location: ../view/page_listclient.php?CLIENTE ALTERADO!");
 }
 
 ?>

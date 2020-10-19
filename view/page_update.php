@@ -8,7 +8,7 @@
 
   $id = $_POST["id"];
 ?>
-
+<?php include_once '../controller/verifica_login.php'; ?>
 <h2 class="text-center">
   ALTERAÇÃO DO CLIENTE <i class="fa fa-user-edit"></i>
 </h2>
@@ -54,7 +54,7 @@
           ALTERAR CLIENTE <i class="fa fa-user-edit"></i>
         </button>
         <br><br>
-        <a href="../index.php">
+        <a href="page_listclient.php">
           Voltar
         </a>
       </div>

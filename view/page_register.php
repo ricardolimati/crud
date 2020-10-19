@@ -1,5 +1,5 @@
 <?php include_once './header.php' ?>
-
+<?php include_once '../controller/verifica_login.php'; ?>
 <h2 class="text-center">
   CADASTRO DO CLIENTE <i class="fa fa-user-plus"></i>
 </h2>
@@ -41,7 +41,7 @@
           Inserir Client <i class="fa fa-user-plus"></i>
         </button>
         <br><br>
-        <a href="../index.php">
+        <a href="page_listclient.php">
           Voltar
         </a>
       </div>

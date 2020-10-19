@@ -7,7 +7,7 @@ $data = $_POST;
 
 if(isset($data) && !empty($data)){
   $maneger->insertClient('registros', $data);
-  header("Location: ../index.php?CLIENTE INSERIDO COM SUCESSO!");
+  header("Location: ../view/page_listclient.php?CLIENTE INSERIDO COM SUCESSO!");
 }
 
 ?>

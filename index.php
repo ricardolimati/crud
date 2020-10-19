@@ -1,67 +1,29 @@
-<?php
-include_once 'model/Conexao.class.php';
-include_once 'model/Manager.class.php';
-$maneger = new Manager();
-?>
-<!DOCTYPE html>
-<html>
 <?php include_once 'view/header.php'; ?>
+<?php $_SESSION["ID"] = NULL;?>
 <div class="container">
-	<h2 class="text-center"> LISTA DE CLIENTES <i class="fa fa-users"></i></h2>
-	<h5 class="text-right">
-		<a href="view/page_register.php" class="btn btn-primary btn-xs">
-			<i class="fa fa-user-plus"></i>
-		</a>
-	</h5>
-	<!-- Iniciando a tabela -->
-	<div class="table-responsive">
-		<table class="table table-hover">
-			<thead class="thead">
-				<tr>
-					<th>ID</th>
-					<th>Cliente</th>
-					<th>E-mail</th>
-					<th>CPF</th>
-					<th>Dt.Nascimento</th>
-					<th>Endereço</th>
-					<th>Whatsapp</th>
-					<th colspan="3">Ações</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php foreach ($maneger->listClient("registros") as $client) : ?>
-					<tr>
-						<td><?php echo $client['id'] ?></td>
-						<td><?php echo $client['name'] ?></td>
-						<td><?php echo $client['email'] ?></td>
-						<td><?php echo $client['cpf'] ?></td>
-						<td><?php echo date("d/m/Y", strtotime($client['birth'])) ?></td>
-						<td><?php echo $client['address'] ?></td>
-						<td><?php echo $client['phone'] ?></td>
-						<td>
-							<form method="POST" action="view/page_update.php">
-								<input type="hidden" name="id" value="<?php echo $client['id'] ?>">
-								<button class="btn btn-warning btn-xs">
-									<i class="fa fa-user-edit"></i>
-								</button>
-							</form>
-						</td>
-						<td>
-							<form method="POST" action="controller/delete_cliente.php" onclick="return confirm('Tem certeza que deseja excluir ?');">
-								<input type="hidden" name="id" value="<?php echo $client['id'] ?>">
-								<button class="btn btn-danger btn-xs">
-									<i class="fa fa-trash"></i>
-								</button>
-							</form>
-						</td>
-					</tr>
-				<?php endforeach; ?>
-			</tbody>
-		</table>
+	<div class="row">
+		<div class="col-4 pt-5 pb-5 offset-4 mb-5 mt-5" style="box-shadow: -5px 13px 48px -6px rgba(0,0,0,0.75);">
+			<form action="controller/login.php" method="POST">
+				<?php
+				if (@$_GET['msg']) {
+				?>
+					<div class="alert alert-danger" role="alert">
+						<?= $_GET['msg'] ?>
+					</div>
+				<?php
+				}
+				?>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Login</label>
+					<input type="text" class="form-control" name="login" aria-describedby="emailHelp" placeholder="Enter email" required>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Senha</label>
+					<input type="password" class="form-control" name="senha" placeholder="Password" required>
+				</div>
+				<button type="submit" class="btn btn-primary">ENTRAR</button>
+			</form>
+		</div>
 	</div>
-	<!-- Fim da Tabela -->
 </div>
 <?php include_once 'view/footer.php'; ?>
-</body>
-
-</html>

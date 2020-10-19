@@ -1,6 +1,6 @@
 <?php
 /**
- * Esta classe de Gerenciamento MVC
+ * Esta classe de Gerenciamento do CRUD
  * 
  * @autor Ricardo Rodrigues de Lima <ricardodreamsites@gmail.com>
  * @versao 1.0

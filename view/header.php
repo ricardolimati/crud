@@ -1,3 +1,9 @@
+<?php
+@session_start();
+?>
+<!DOCTYPE html>
+<html>
+
 <head>
 	<meta charset="UTF-8">
 	<!-- Titulo e Icone - HEAD -->
@@ -39,13 +45,20 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 pt-3 pb-3">
-					<a href="/crud">
+				<div class="col-md-2 pt-3 pb-3">
+					<a href="/crud/view/page_listclient.php">
 						<img style="width: 100%; height: auto;" src="/crud/assest/img/logo-crud.jpg" alt="">
 					</a>
 				</div>
 				<div class="col-md-9 pt-3 pb-3 text-center align-middle">
-					<h3>TESTE / CRUD - RICARDO RODRIGUES DE LIMA (PHP Orientado a Objetos / Aquitetura MVC / PDO / MySql / )</h3>
+					<h5>TESTE / CRUD - RICARDO RODRIGUES DE LIMA (PHP Orientado a Objetos / Aquitetura MVC / PDO / MySql / )</h5>
+				</div>
+				<div class="col-md-1 pt-3 pb-3 text-center align-middle">
+					<a href="/crud/index.php">
+						<button class="btn btn-danger btn-xs">
+							<i class="fas fa-times-circle"></i>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
